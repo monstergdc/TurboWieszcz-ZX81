@@ -1,0 +1,51 @@
+object Form1: TForm1
+  Left = 235
+  Height = 489
+  Top = 132
+  Width = 491
+  Caption = 'Convert ASCII to ZX81'
+  ClientHeight = 489
+  ClientWidth = 491
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 423
+    Top = 66
+    Width = 491
+    Align = alClient
+    ScrollBars = ssVertical
+    TabOrder = 0
+    WantTabs = True
+    WordWrap = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 66
+    Top = 0
+    Width = 491
+    Align = alTop
+    ClientHeight = 66
+    ClientWidth = 491
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 312
+      Height = 30
+      Top = 16
+      Width = 166
+      Anchors = [akLeft, akBottom]
+      Caption = 'go'
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object Label1: TLabel
+      Left = 1
+      Height = 64
+      Top = 1
+      Width = 115
+      Align = alLeft
+      Caption = ' convert any text like:'#13#10'   test db "test"'#13#10' to ZX81 format:'#13#10'   test db 57, 42, 56, 57'
+      ParentColor = False
+    end
+  end
+end
